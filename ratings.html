@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Shop Capture</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        var names = localStorage.getItem("names");
+        var addresses = localStorage.getItem("addresses");
+        var ratings = localStorage.getItem("ratings");
+        
+        var names_array = names.split(";");
+        var addresses_array = addresses.split(";");
+        var ratings_array = ratings.split(";");
+        
+        for (var i = 0; i < names_array.length; i++) {
+            console.log(names_array[i] + " " + addresses_array[i] + " " + ratings_array[i]);
+        }
+
+    </script>
+  </head>
+  <body>
+      <br>
+      <ul class = "nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="ratings.html">Ratings</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="project.html">Project Description</a></li>
+      </ul>
+      <br>
+  </body>
+</html>
