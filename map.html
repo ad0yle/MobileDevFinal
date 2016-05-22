@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Map</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
+      <title>Coffee Shop Locator</title>
+      <link rel="icon" href="coffee_star.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script>
       // This example requires the Places library. Include the libraries=places
@@ -43,7 +44,7 @@
         
         console.log(parseFloat(localStorage.getItem('distance'))*1609.34);
           
-        document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + "&nbsp;&nbsp;";
+        document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + " Miles &nbsp;&nbsp;";
         document.getElementById('zipcode').innerHTML = "Zip Code: " + localStorage.getItem('zipCode') + "&nbsp;&nbsp;";
           
         map = new google.maps.Map(document.getElementById('map'), {
@@ -77,15 +78,12 @@
         localStorage.setItem("ratings",ratings);
       }
       function createMarker(place) {
-        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var image = 'coffee_star.png';
         var placeLoc = place.geometry.location;
         var marker = new google.maps.Marker({
           map: map,
-          position: place.geometry.location
-          /*icon: {
-            path: image,
-            scale: 10
-          }*/
+          position: place.geometry.location,
+          icon:image
         });
 
         google.maps.event.addListener(marker, 'click', function() {
@@ -101,8 +99,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="map.html">Map</a></li>
           <li><a href="ratings.html">Ratings</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="project.html">Project Description</a></li>
           <li class = "search" id = "distance">Distance: ?&nbsp;&nbsp;</li>
           <li class = "search" id = "zipcode">Zipcode: ?&nbsp;&nbsp;</li>
       </ul><br>

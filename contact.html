@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Coffee Shop Locator</title>
+      <link rel="icon" href="coffee_star.png">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function searchTerms(zip,distance) {
+          var zipCode = zip;
+          var distance = distance;
+          if (zip!=""){
+          localStorage.setItem('zipCode', zipCode);
+          } 
+          if (distance !="") {
+          localStorage.setItem('distance', distance);
+          }
+          window.location.href = 'map.html';
+      }
+    </script>
+  </head>
+  <body>
+      <br>
+      <ul class = "nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="ratings.html">Ratings</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <br>
+      
+      <table>
+        <tr>
+            <td><img class = "profile" src = "amanda.jpg"></td>
+            <td><img class = "profile" src = "kyle.jpg"></td>
+            <td><img class = "profile" src = "kate.jpg"></td>
+            <td><img class = "profile" src = "ashley.jpg"></td>
+        </tr>
+        
+        <tr>
+            <td>Amanda Doyle</td>
+            <td>Kyle Jassoy</td>
+            <td>Kaitlyn Mitchell</td>
+            <td>Ashley Vassell</td>
+        </tr>
+          
+          <tr>
+            <td><a href = "mailto:amanda.doyle1@ge.com">amanda.doyle1@ge.com</a></td>
+            <td><a href = "mailto:kyle.jassoy@ge.com">kyle.jassoy@ge.com</a></td>
+            <td><a href = "kaitlyn.mitchell@ge.com">kaitlyn.mitchell@ge.com</a></td>
+            <td><a href = "mailto:ashley.vassell@ge.com">ashley.vassell@ge.com</a></td>
+        </tr>
+          
+      </table>
+      
+  </body>
+</html>

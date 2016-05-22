@@ -26,3 +26,21 @@ li {
 .search {
     float:right;
 }
+
+td {
+    text-align: center;
+    padding:10px;
+}
+
+.coffee_star {
+    width:20px;
+}
+
+table {
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.profile {
+    width:150px;
+}
