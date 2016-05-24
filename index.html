@@ -3,23 +3,10 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
       <title>Coffee Shop Locator</title>
-      <link rel="icon" href="coffee_star.png">
-    <script>
-      function searchTerms(zip,distance) {
-          var zipCode = zip;
-          var distance = distance;
-          if (zip!=""){
-          localStorage.setItem('zipCode', zipCode);
-          } 
-          if (distance !="") {
-          localStorage.setItem('distance', distance);
-          }
-          window.location.href = 'map.html';
-      }
-    </script>
-  </head>
+      <link rel="icon" href="./pics/coffee_star.png">
+    </head>
   <body>
       <br>
       <ul class = "nav">
@@ -34,6 +21,7 @@
      &nbsp; Zip Code: <input type="text" name="zip" data-fv-zipcode="true"><br><br>
      &nbsp; Distance (Miles): <input type="text" name="distance"><br><br>
   <input type="submit" value="Submit">
-</form><br>
-  </body>
+	</form><br>
+	<script src="./js/search.js" type="text/javascript"></script>
+	  </body>
 </html>
