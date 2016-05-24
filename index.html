@@ -4,7 +4,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
-      <title>Coffee Shop Locator</title>
+      <title>Cofé Finder</title>
       <link rel="icon" href="coffee_star.png">
     <script>
       function searchTerms(zip,distance) {
@@ -21,19 +21,32 @@
     </script>
   </head>
   <body>
-      <br>
-      <ul class = "nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="ratings.html">Ratings</a></li>
-          <li><a href="about.html">About</a></li>
+    <div class="container">
+      <BR>
+      <h1>Welcome to Café Finder!</h1>
+      <nav>
+          <li><a href="index.html">Home</a></li> | 
+          <li><a href="map.html">Map</a></li> | 
+          <li><a href="ratings.html">Ratings</a></li> | 
+          <li><a href="about.html">About</a></li> | 
           <li><a href="contact.html">Contact</a></li>
-      </ul>
+      </nav>
       <br>
-     <br><form action="javascript:;" onsubmit="searchTerms(zip.value,distance.value)">
-     &nbsp; Zip Code: <input type="text" name="zip" data-fv-zipcode="true"><br><br>
-     &nbsp; Distance (Miles): <input type="text" name="distance"><br><br>
-  <input type="submit" value="Submit">
-</form><br>
+      <br>
+      <section id="main">
+
+        <h2>Find your next coffee shop</h2>
+        Please input the information requested below to find cafés and coffee shops in your area! Then go to the Ratings tab to see the ratings of the found locations.<BR><BR><BR>
+        <div id ="form">
+        <form action="javascript:;" onsubmit="searchTerms(zip.value,distance.value)" style="text-align:center; font-size:15pt;">
+          &nbsp; <b>Zip Code: <input type="text" name="zip" data-fv-zipcode="true" style="height:34px; font-size:20pt; text-align:center; color:#929292;"><br><br>
+          &nbsp; Distance (Miles):</b> <input type="text" name="distance" style="height:34px; font-size:20pt; text-align:center; color:#929292;"><br><br>
+          <input type="submit" value="Find my cafés!">
+        </form><br>
+      </div>
+      </section>
+      </div>
   </body>
+
+
 </html>

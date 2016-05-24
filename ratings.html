@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Coffee Shop Locator</title>
+    <title>Cofé Finder</title>
       <link rel="icon" href="coffee_star.png">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -9,19 +9,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   </head>
   <body>
+    <div class="container">
+      <h1>Café Ratings</h1>
       <br>
-      <ul class = "nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="ratings.html">Ratings</a></li>
-          <li><a href="about.html">About</a></li>
+      <nav>
+          <li><a href="index.html">Home</a></li> | 
+          <li><a href="map.html">Map</a></li> | 
+          <li><a href="ratings.html">Ratings</a></li> | 
+          <li><a href="about.html">About</a></li> | 
           <li><a href="contact.html">Contact</a></li>
           <li class = "search" id = "distance">Distance: ?&nbsp;&nbsp;</li>
           <li class = "search" id = "zipcode">Zipcode: ?&nbsp;&nbsp;</li>
-      </ul>
+      </nav>
       <br>
-  </body>
-    <script>
+      <BR>
+      <section id="main">
+        <script>
         
         document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + " Miles &nbsp;&nbsp;";
         document.getElementById('zipcode').innerHTML = "Zip Code: " + localStorage.getItem('zipCode') + "&nbsp;&nbsp;";
@@ -85,5 +88,10 @@
             console.log(names_array[i] + " " + addresses_array[i] + " " + ratings_array[i]);
         }
 
-    </script>
+        </script>
+
+      </section>
+    </div>
+  </body>
+    
 </html>
