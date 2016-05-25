@@ -1,38 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-<<<<<<< HEAD
-    <title>Cofé Finder</title>
-      <link rel="icon" href="coffee_star.png">
-=======
-    <title>Coffee Shop Locator</title>
-      <link rel="icon" href="./pics/coffee_star.png">
->>>>>>> master
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Café Ratings</h1>
-      <br>
-      <nav>
-          <li><a href="index.html">Home</a></li> | 
-          <li><a href="map.html">Map</a></li> | 
-          <li><a href="ratings.html">Ratings</a></li> | 
-          <li><a href="about.html">About</a></li> | 
-          <li><a href="contact.html">Contact</a></li>
-          <li class = "search" id = "distance">Distance: ?&nbsp;&nbsp;</li>
-          <li class = "search" id = "zipcode">Zipcode: ?&nbsp;&nbsp;</li>
-      </nav>
-      <br>
-<<<<<<< HEAD
-      <BR>
-      <section id="main">
-        <script>
-        
-        document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + " Miles &nbsp;&nbsp;";
+/*
+JavaScript for ratings.html
+*/
+
+
+document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + " Miles &nbsp;&nbsp;";
         document.getElementById('zipcode').innerHTML = "Zip Code: " + localStorage.getItem('zipCode') + "&nbsp;&nbsp;";
         
         var names = localStorage.getItem("names");
@@ -74,7 +45,7 @@
             for (j = 0; j < Math.round(parseFloat(ratings_array[i])); j++) {
                 var DOM_img = document.createElement("img");
                 DOM_img.className = "coffee_star";
-                DOM_img.src = "coffee_star.png";
+                DOM_img.src = "./pics/coffee_star.png";
                 td3.appendChild(DOM_img);
             }
 
@@ -93,15 +64,3 @@
         for (var i = 0; i < names_array.length; i++) {
             console.log(names_array[i] + " " + addresses_array[i] + " " + ratings_array[i]);
         }
-
-        </script>
-
-      </section>
-    </div>
-  </body>
-    
-=======
-  </body>
-    <script src="./js/ratings.js" type="text/javascript"></script>
->>>>>>> master
-</html>
