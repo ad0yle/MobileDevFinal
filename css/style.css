@@ -9,7 +9,7 @@ html, body {
 }
 
 body{
-    background-image: url("texture2.jpg");
+    background-image: url("../texture2.jpg");
 }
 
 #map {

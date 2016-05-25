@@ -1,10 +1,9 @@
 /*
 JavaScript for ratings.html
 */
-
-
-document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + " Miles &nbsp;&nbsp;";
-        document.getElementById('zipcode').innerHTML = "Zip Code: " + localStorage.getItem('zipCode') + "&nbsp;&nbsp;";
+function createTable() {
+    document.getElementById('distance').innerHTML = "Distance: " + localStorage.getItem('distance') + " Miles &nbsp;&nbsp;";
+    document.getElementById('zipcode').innerHTML = "Zip Code: " + localStorage.getItem('zipCode') + "&nbsp;&nbsp;";
         
         var names = localStorage.getItem("names");
         var addresses = localStorage.getItem("addresses");
@@ -14,7 +13,7 @@ document.getElementById('distance').innerHTML = "Distance: " + localStorage.getI
         var addresses_array = addresses.split(";");
         var ratings_array = ratings.split(";");
         
-        var table = document.createElement('table');
+        var table = document.getElementById("ratings_table");
         var tr = document.createElement('tr');
         var th1 = document.createElement('th');
         var th2 = document.createElement('th');
@@ -64,3 +63,6 @@ document.getElementById('distance').innerHTML = "Distance: " + localStorage.getI
         for (var i = 0; i < names_array.length; i++) {
             console.log(names_array[i] + " " + addresses_array[i] + " " + ratings_array[i]);
         }
+}
+
+        

@@ -72,7 +72,7 @@ JavaScript for map.html
         localStorage.setItem("ratings",ratings);
       }
       function createMarker(place) {
-        var image = 'coffee_star.png';
+        var image = 'pics/coffee_star.png';
         var placeLoc = place.geometry.location;
         var marker = new google.maps.Marker({
           map: map,
