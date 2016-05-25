@@ -8,19 +8,61 @@ html, body {
     padding: 0;
 }
 
+body{
+    background-image: url("texture2.jpg");
+}
+
 #map {
     height: 100%;
 }
 
-.nav {
+nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left:20px;
+    text-align: center;
+    height:auto;
+    padding-top:8px;
+    padding-bottom: 8px;
+    background-color:#4c2d1b;
+    color: #ffffff;
+    font-size: 15pt;
+    border-radius:8px;
 }
+
 
 li {
     display: inline;
+    color: #ffffff;
+}
+
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+nav li a:hover{
+    color: #bd783f;
+    text-decoration: underline;
+}
+
+.container{
+    margin: auto;
+    width: 60%;
+    background-color: #ffffff;
+    height: 100%;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+#main {
+  color: #202020;
+  margin: auto;
+  padding-left:10px;
+    width: 96%;
+    height: 50%;
+    border: 3px solid #4c2d1b;
+    background-color: #ffffff;
 }
 
 .search {
@@ -43,4 +85,25 @@ table {
 
 .profile {
     width:150px;
+}
+
+input[type=text] {
+    float:right;
+    clear:both;
+    font-family: "GE Inspira" !important;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: "GE Inspira" !important;
+    font-size: 14pt;
+    border: 1px solid #4c2d1b;
+}
+
+#form {
+    margin: auto;
+    width: 62%;
+    text-align:center;
 }
