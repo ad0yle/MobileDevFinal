@@ -39,8 +39,6 @@ nav li a{
     text-decoration: none;
 }
 
-
-
 nav li a:hover{
     color: #bd783f;
     text-decoration: underline;
@@ -51,6 +49,14 @@ nav li a:hover{
     width: 60%;
     background-color: #ffffff;
     height: 100%;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.ratings{
+    margin: auto;
+    width: 60.1%;
+    background-color: #ffffff;
     padding-left:3px;
     padding-right:3px;
 }
@@ -71,7 +77,10 @@ nav li a:hover{
 
 td {
     text-align: center;
-    padding:10px;
+    padding-left:45px;
+    padding-right:45px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .coffee_star {
@@ -79,8 +88,9 @@ td {
 }
 
 table {
-    margin-left:20px;
-    margin-top:20px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#ffffff;
 }
 
 .profile {
@@ -106,4 +116,8 @@ input[type=submit] {
     margin: auto;
     width: 62%;
     text-align:center;
+}
+
+.contact {
+    padding:10px;
 }
