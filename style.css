@@ -1,0 +1,324 @@
+@media screen and (min-width:321px) 
+{
+html {
+    font-family: "GE Inspira" !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-image: url("../pics/texture2.jpg");
+	
+}
+.bodynav{
+	overflow:auto;
+}
+
+#map {
+    height: 100%;
+}
+
+nav {
+    list-style-type: none;
+    text-align: center;
+    height:auto;
+    padding-top:8px;
+    padding-bottom: 8px;
+    background-color:#4c2d1b;
+    color: #ffffff;
+    font-size: 15pt;
+    border-radius:8px;
+}
+
+
+nav li {
+    display: inline;
+    color: #;
+}
+
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #bd783f;
+    text-decoration: underline;
+}
+
+.container{
+    margin: auto;
+    width: 60%;
+    background-color: #ffffff;
+    height: 100%;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.ratings{
+    margin: auto;
+    width: 60.1%;
+    background-color: #ffffff;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+#main {
+  color: #202020;
+  margin: auto;
+  padding-left:10px;
+    width: auto;
+    height: auto;
+    border: 3px solid #4c2d1b;
+    background-color: #ffffff;
+}
+
+.search {
+    float:right;
+	 overflow:hidden;
+}
+
+td {
+    text-align: center;
+    padding-left:45px;
+    padding-right:45px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.coffee_star {
+    width:20px;
+}
+
+table {
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#ffffff;
+}
+
+.profile {
+    width:150px;
+}
+
+input[type=text] {
+    float:right;
+    clear:both;
+    font-family: "GE Inspira" !important;
+	height:34px; 
+	font-size:20pt; 
+	text-align:center; 
+	color:#929292;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: "GE Inspira" !important;
+    font-size: 14pt;
+    border: 1px solid #4c2d1b;
+}
+
+#form {
+    margin: auto;
+    width: 62%;
+    text-align:center;
+	font-size:15pt;
+
+}
+
+.contact {
+    padding:10px;
+
+}
+
+select {
+	height:34px; 
+	width:210px; 
+	font-size:20pt; 
+	text-align:center; 
+	color:#929292; 
+	float:right;
+}
+
+#footer {
+    text-align: center;
+    height:auto;
+    background-color:#4c2d1b;
+    color: #ffffff;
+    font-size: 15pt;
+    border-radius:8px;
+	
+}
+#google{
+	height:150px;
+	width:250px;
+}
+}
+@media screen and (max-width:320px) 
+{
+html {
+    font-family: "GE Inspira" !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../pics/texture2.jpg");
+}
+.bodynav{
+	overflow:auto;
+}
+
+#map {
+
+    height: 55%;
+	width: 100%;
+}
+nav {
+    list-style-type: none;
+    text-align: left;
+    height:7% !important;
+    padding-top:8px;
+    padding-bottom: 8px;
+    background-color:#4c2d1b;
+    color: #ffffff;
+    font-size: 10pt;
+    border-radius:8px;
+	display:block;
+}
+
+nav li {
+    display: inline;
+    color: #ffffff;
+}
+
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #bd783f;
+    text-decoration: underline;
+}
+table {
+    margin-right:none;
+    margin-left:none;
+    background-color:#ffffff;
+	width:100%;
+	font-size: 8pt;
+}
+.container{
+    margin: none;
+    width: 100%;
+    background-color: none;
+    height: 90%;
+    padding-left:none;
+    padding-right:none;
+	font-size: 10pt;
+}
+#main {
+	color: #202020;
+	margin: auto;
+	padding-left:10px;
+    width: auto;
+    height: auto;
+    border: 3px solid #4c2d1b;
+    background-color: #ffffff;
+}
+
+.search {
+    float:right;
+}
+
+td {
+    text-align: center;
+    padding-left:none;
+    padding-right:none;
+    padding-top:none;
+    padding-bottom:none;
+
+}
+
+.coffee_star {
+    width:5px;
+}
+
+input[type=text] {
+    display: block;
+    clear:both;
+    font-family: "GE Inspira" !important;
+	height:15px; 
+	font-size:10pt; 
+	text-align:left; 
+	color:#929292;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: "GE Inspira" !important;
+    font-size: 10pt;
+    border: 1px solid #4c2d1b;
+	display: block;
+}
+
+#form {
+    margin: none;
+    width: 62%;
+    display: block;
+	font-size:10pt;
+}
+
+.contact {
+    padding:10px;
+}
+
+select {
+	height:34px; 
+	width:100px; 
+	font-size:12pt; 
+	display: block;
+	color:#929292; 
+	float:left;
+}
+
+#footer {
+    text-align: center;
+    background-color:none;
+    color: #ffffff;
+    font-size:10pt;
+	
+}
+#google{
+	height:150px;
+	width:250px;
+}
+.remove{
+	display: none;
+}
+.search {
+	float: left;
+}
+.pics {
+	display: none;
+}
+.names {
+	display: none;
+}
+.contact {
+	display: inline-block;
+}
+
+}
