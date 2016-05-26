@@ -1,3 +1,5 @@
+@media screen and (min-width:321px) 
+{
 html {
     font-family: "GE Inspira" !important;
 }
@@ -9,7 +11,7 @@ html, body {
 }
 
 body{
-    background-image: url("texture2.jpg");
+    background-image: url("../pics/texture2.jpg");
 }
 
 #map {
@@ -39,8 +41,6 @@ nav li a{
     text-decoration: none;
 }
 
-
-
 nav li a:hover{
     color: #bd783f;
     text-decoration: underline;
@@ -51,6 +51,14 @@ nav li a:hover{
     width: 60%;
     background-color: #ffffff;
     height: 100%;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.ratings{
+    margin: auto;
+    width: 60.1%;
+    background-color: #ffffff;
     padding-left:3px;
     padding-right:3px;
 }
@@ -71,7 +79,10 @@ nav li a:hover{
 
 td {
     text-align: center;
-    padding:10px;
+    padding-left:45px;
+    padding-right:45px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .coffee_star {
@@ -79,8 +90,9 @@ td {
 }
 
 table {
-    margin-left:20px;
-    margin-top:20px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:#ffffff;
 }
 
 .profile {
@@ -91,6 +103,10 @@ input[type=text] {
     float:right;
     clear:both;
     font-family: "GE Inspira" !important;
+	height:34px; 
+	font-size:20pt; 
+	text-align:center; 
+	color:#929292;
 }
 
 input[type=submit] {
@@ -106,4 +122,185 @@ input[type=submit] {
     margin: auto;
     width: 62%;
     text-align:center;
+	text-align:center; 
+	font-size:15pt;
+}
+
+.contact {
+    padding:10px;
+}
+
+select {
+	height:34px; 
+	width:210px; 
+	font-size:20pt; 
+	text-align:center; 
+	color:#929292; 
+	float:right;
+}
+
+#footer {
+    text-align: center;
+    height:auto;
+    background-color:#4c2d1b;
+    color: #ffffff;
+    font-size: 15pt;
+    border-radius:8px;
+	
+}
+}
+@media screen and (max-width:320px) 
+{
+html {
+    font-family: "GE Inspira" !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../pics/texture2.jpg");
+}
+
+#map {
+
+    height: 55%;
+	width: 100%;
+}
+nav {
+    list-style-type: none;
+    text-align: left;
+    height:7% !important;
+    padding-top:8px;
+    padding-bottom: 8px;
+    background-color:#4c2d1b;
+    color: #ffffff;
+    font-size: 10pt;
+    border-radius:8px;
+	display:block;
+}
+
+li {
+    display: inline;
+    color: #ffffff;
+}
+
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #bd783f;
+    text-decoration: underline;
+}
+table {
+    margin-right:none;
+    margin-left:none;
+    background-color:#ffffff;
+	width:100%;
+	font-size: 8pt;
+}
+.container{
+    margin: none;
+    width: 100%;
+    background-color: none;
+    height: 90%;
+    padding-left:none;
+    padding-right:none;
+	font-size: 10pt;
+}
+#main {
+	color: #202020;
+	margin: auto;
+	padding-left:10px;
+    width: 96%;
+    height: 50%;
+    border: 3px solid #4c2d1b;
+    background-color: #ffffff;
+}
+
+.search {
+    float:right;
+}
+
+td {
+    text-align: center;
+    padding-left:none;
+    padding-right:none;
+    padding-top:none;
+    padding-bottom:none;
+
+}
+
+.coffee_star {
+    width:5px;
+}
+
+input[type=text] {
+    display: block;
+    clear:both;
+    font-family: "GE Inspira" !important;
+	height:15px; 
+	font-size:10pt; 
+	text-align:left; 
+	color:#929292;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: "GE Inspira" !important;
+    font-size: 10pt;
+    border: 1px solid #4c2d1b;
+	display: block;
+}
+
+#form {
+    margin: none;
+    width: 62%;
+    display: block;
+	font-size:10pt;
+}
+
+.contact {
+    padding:10px;
+}
+
+select {
+	height:34px; 
+	width:100px; 
+	font-size:12pt; 
+	display: block;
+	color:#929292; 
+	float:left;
+}
+
+#footer {
+    text-align: center;
+    background-color:none;
+    color: #ffffff;
+    font-size:10pt;
+	
+}
+.remove{
+	display: none;
+}
+.search {
+	float: left;
+}
+.pics {
+	display: none;
+}
+.names {
+	display: none;
+}
+.contact {
+	display: inline-block;
+}
+
 }

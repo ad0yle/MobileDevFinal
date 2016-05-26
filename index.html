@@ -3,30 +3,14 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="style.css" />
-      <title>Cofé Finder</title>
-      <link rel="icon" href="coffee_star.png">
-    <script>
-      function searchTerms(zip,distance) {
-          var zipCode = zip;
-          var distance = distance;
-          if (zip!=""){
-          localStorage.setItem('zipCode', zipCode);
-          } 
-          if (distance !="") {
-          localStorage.setItem('distance', distance);
-          }
-          window.location.href = 'map.html';
-      }
-    </script>
-  </head>
-=======
-    <link rel="stylesheet" href="./css/style.css" />
-      <title>Coffee Shop Locator</title>
-      <link rel="icon" href="./pics/coffee_star.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Café Finder</title>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="Viewport" content="width=device-width" />
+    <link rel="icon" href="./pics/coffee_star.png">
+	
     </head>
->>>>>>> master
   <body>
     <div class="container">
       <BR>
@@ -40,30 +24,29 @@
       </nav>
       <br>
       <br>
-<<<<<<< HEAD
       <section id="main">
-
         <h2>Find your next coffee shop</h2>
-        Please input the information requested below to find cafés and coffee shops in your area! Then go to the Ratings tab to see the ratings of the found locations.<BR><BR><BR>
+        Please input the information requested below to find cafés and coffee shops in your area! Then go to the Ratings tab to see the ratings of the found locations.<BR class="remove"><BR class="remove"><BR class="remove">
         <div id ="form">
-        <form action="javascript:;" onsubmit="searchTerms(zip.value,distance.value)" style="text-align:center; font-size:15pt;">
-          &nbsp; <b>Zip Code: <input type="text" name="zip" data-fv-zipcode="true" style="height:34px; font-size:20pt; text-align:center; color:#929292;"><br><br>
-          &nbsp; Distance (Miles):</b> <input type="text" name="distance" style="height:34px; font-size:20pt; text-align:center; color:#929292;"><br><br>
+        <form action="javascript:;" onsubmit="searchTerms(zip.value, distance.value)">
+          &nbsp; <b>Zip Code: <input type="text" name="zip" data-fv-zipcode="true"><br class="remove"><br class="remove">
+		  <label for="distance">Distance (Miles):</label>
+    		<select name="distance" id="distance">
+		        <option value="5">5</option>
+		        <option value="10" selected="selected">10</option>
+		        <option value="15">15</option>
+		        <option value="20">20</option>
+				<option value="25">25</option>
+    		</select><br><br>
           <input type="submit" value="Find my cafés!">
         </form><br>
-      </div>
+        </div>
       </section>
-      </div>
-  </body>
-
-
-=======
-     <br><form action="javascript:;" onsubmit="searchTerms(zip.value,distance.value)">
-     &nbsp; Zip Code: <input type="text" name="zip" data-fv-zipcode="true"><br><br>
-     &nbsp; Distance (Miles): <input type="text" name="distance"><br><br>
-  <input type="submit" value="Submit">
-	</form><br>
-	<script src="./js/search.js" type="text/javascript"></script>
-	  </body>
->>>>>>> master
+	  <br><br>
+		<div id="footer" data-role="footer">
+	    	Powered by Mobile Development Team 8
+		</div>
+     </div>
+	 <script src="./js/search.js" type="text/javascript"></script>
+   </body>
 </html>
