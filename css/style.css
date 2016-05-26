@@ -11,7 +11,9 @@ html, body {
 }
 
 body{
+
     background-image: url("../pics/texture2.jpg");
+
 }
 
 #map {
@@ -122,12 +124,13 @@ input[type=submit] {
     margin: auto;
     width: 62%;
     text-align:center;
-	text-align:center; 
 	font-size:15pt;
+
 }
 
 .contact {
     padding:10px;
+
 }
 
 select {
