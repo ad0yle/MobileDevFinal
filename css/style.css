@@ -70,7 +70,7 @@ nav li a:hover{
   margin: auto;
   padding-left:10px;
     width: 96%;
-    height: 50%;
+    height: auto;
     border: 3px solid #4c2d1b;
     background-color: #ffffff;
 }
@@ -151,6 +151,10 @@ select {
     border-radius:8px;
 	
 }
+#google{
+	height:150px;
+	width:250px;
+}
 }
 @media screen and (max-width:320px) 
 {
@@ -221,7 +225,7 @@ table {
 	margin: auto;
 	padding-left:10px;
     width: 96%;
-    height: 50%;
+    height: auto;
     border: 3px solid #4c2d1b;
     background-color: #ffffff;
 }
@@ -305,5 +309,8 @@ select {
 .contact {
 	display: inline-block;
 }
-
+#google{
+	height:150px;
+	width:250px;
+}
 }
